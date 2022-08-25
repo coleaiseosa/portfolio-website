@@ -32,7 +32,7 @@ button {
   display: inline-block;
   font-family: inherit;
   font-size: 16px;
-  background-color: #357b70;
+  background-color: #94dbe0;
   color: #fff;
   text-decoration: none;
   padding: 10px;
@@ -47,7 +47,7 @@ button {
   display: inline-block;
   font-family: inherit;
   font-size: 16px;
-  background-color: #357b70;
+  background-color: #94dbe0;
   color: #fff;
   text-decoration: none;
   padding: 10px;
@@ -57,9 +57,9 @@ button {
   transition: 0.2s opacity;
 }
 
-.contact-link a {
-  color: #fff;
-}
+/* .contact-link a, {
+  color: var(--primary-color-text);
+} */
 
 button:hover,
 button:focus,
@@ -74,9 +74,9 @@ button:focus,
   color: #2b2b2b;
 }
 
-/* .navigation-list__item--active {
-text-decoration: none;
-} */
+.navigation-list__item--active {
+  text-decoration: none;
+}
 
 h1 {
   font-size: 30px;
@@ -140,6 +140,11 @@ h2 {
   border-bottom: 2px solid #73a0dc;
 }
 
+.page-header > img {
+  width: 30px;
+  height: 50px;
+}
+
 .page-header__item {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 100px;
@@ -171,6 +176,31 @@ h2 {
   display: inline-block;
   width: 33%;
 }
+
+.portfolio-contact {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.portfolio-contact__form--input {
+  border: 2px solid #94dbe0;
+  outline: none;
+  margin-top: 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.portfolio-contact__form input,
+textarea {
+  padding-left: 10px;
+}
+
+/* ::placeholder {
+  padding-left: 10px;
+} */
 
 @supports (display : grid) { /* this is done for newer browser models as they would read this and ignore the previous grid__item code */
   .grid {
@@ -318,6 +348,10 @@ fill: #f76414;
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .profile__portrait {
+    width: 50%;
   }
 }
 
