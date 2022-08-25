@@ -72,9 +72,9 @@ button:focus,
   color: var(--secondary-text-color);
 }
 
-/* .navigation-list__item--active {
-text-decoration: none;
-} */
+.navigation-list__item--active {
+  text-decoration: none;
+}
 
 h1 {
   font-size: 30px;
@@ -170,6 +170,22 @@ h2 {
   margin-top: 20px;
 }
 
+.portfolio-contact__form--input {
+  border: 2px solid var(--primary-color);
+  outline: none;
+  margin-top: 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.portfolio-contact__form input,
+textarea {
+  padding-left: 10px;
+}
+
+/* ::placeholder {
+  padding-left: 10px;
+} */
 
 @supports (display : grid) { /* this is done for newer browser models as they would read this and ignore the previous grid__item code */
   .grid {
@@ -266,6 +282,10 @@ fill: #f76414;
 @media all and (max-width: 500px) { /* this changes the initial 3 column grid in thw woek.html to a 1 column grid */
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .profile__portrait {
+    width: 50%;
   }
 }
 
