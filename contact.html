@@ -31,16 +31,16 @@
   </header>
 
   <div class="portfolio-contact">
-    <div class="">
+    <div class="portfolio-contact__form">
       <form class="" method="post" id="contact-form">
         <label class="standard-label" for="contact-email"> E-mail: </label>
-        <input type="email" id="contact-email" required> <br>
+        <input type="email" id="contact-email" placeholder="johndoe@gmail.com" required> <br>
 
         <label class="standard-label" for="contact-telephone"> Telephone: </label>
-        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-telephone" required> <br> <!-- the pattern attribute for phone numbers is not adequate for international numbers-->
+        <input type="tel" id="contact-telephone" placeholder="555-333-6678" required> <br> <!--pattern="\d{3}[\-]\d{3}[\-]\d{4}" immediately after the type ="tel" the pattern attribute for phone numbers is not adequate for international numbers-->
 
         <label class="standard-label" for="contact-message"> Message: </label>
-        <textarea maxlength="240" id="contact-message" required></textarea> <br>
+        <textarea maxlength="240" id="contact-message" placeholder="please type your message" required></textarea> <br>
 
         <input type="submit" value="Send message">
       </form>
@@ -63,9 +63,9 @@
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
-      <img src="img/github.svg" alt="Github">
-      <img src="img/twitter.svg" alt="Twitter">
-      <img src="img/linkedin.svg" alt="LinkenIn">
+      <a href="https://github.com/coleaiseosa" target="_blank"> <img src="img/github.svg" alt="Github"></a>
+      <a href="https://twitter.com/marcey_Cole" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/aiseosa-marcella-cole/" target="_blank"><img src="img/linkedin.svg" alt="LinkenIn"></a>
     </div>
   </footer>
 

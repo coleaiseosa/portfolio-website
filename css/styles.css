@@ -2,7 +2,7 @@
   --link-color: #9619da;
   --link-visited-color: #05676e;
   --link-active-color: #489c79;
-  --primary-color: #357b70;
+  --primary-color: #94dbe0;
   --primary-color-text: #fff;
   --secondary-color: #e0b354;
   --secondary-text-color: #2b2b2b;
@@ -55,9 +55,9 @@ button,
   transition: 0.2s opacity;
 }
 
-.contact-link a {
+/* .contact-link a, {
   color: var(--primary-color-text);
-}
+} */
 
 button:hover,
 button:focus,
@@ -169,6 +169,7 @@ h2 {
   text-align: center;
   margin-top: 20px;
 }
+
 
 @supports (display : grid) { /* this is done for newer browser models as they would read this and ignore the previous grid__item code */
   .grid {
