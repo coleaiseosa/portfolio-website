@@ -198,6 +198,9 @@ textarea {
   padding-left: 10px;
 }
 
+.project {
+  width: 400px;
+}
 /* ::placeholder {
   padding-left: 10px;
 } */
