@@ -187,6 +187,10 @@ textarea {
   padding-left: 10px;
 } */
 
+.project {
+  width: 400px;
+}
+
 @supports (display : grid) { /* this is done for newer browser models as they would read this and ignore the previous grid__item code */
   .grid {
     display: grid;
