@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <title>Meet App Case study</title>
+</head>
+<body>
+    <div class=".page-content">
+        <div>
+            <h1>Case Study For Meet App</h1>
+        </div>
+
+        <div>
+            <h2>Overview</h2>
+           <p> Meet App is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD) technique. The Meet application uses Google Calendar API to fetch upcoming events.</p>
+        </div>
+
+        <div>
+            <h2>Purpose & Context</h2>
+            <p>Meet App was a personal project I built as part of my web development course at CareerFoundry to demonstrate my skills in building a progressive web application</p>
+        </div>
+
+        <div>
+            <h2>Objective</h2>
+            <p>The aim of the project was to have a Web application that is not only a normal web application but also has the benefits of both serverless architecture and Progressive Web Application (PWA). The problem that I wanted to solve in this project is to build a Serverless project that does not require backend maintainance, is easy to scale and available both offline and online</p>
+            <img class="meet" src="img/meet.jpg" alt="home page">
+        </div>
+
+        <div>
+            <h2>Approach</h2>
+            
+            <div>
+                <h3>STEP 1:</h3>
+
+                <p>I built the application using Test-driven development (TDD) which is a software development process that focuses on unit testing to ensure he integrity and success of the applcation or software and Behavior Driven Development's (BDD) Gherkin Syntax</p>
+                <img class="meet" src="img/tddSteps.jpg" alt="Test-driven development image">
+            </div>
+
+            <div>
+                <h3>STEP 2:</h3>
+                <P>I wrote Lambda functions to implement severless technology in the application, I ensured the lambda functions were adequately tested and I created a serverless deployment package using AWS Lambda. I linked the application to Google Calendar to enable it fetch data concerning events. </P>
+            </div>
+
+            <div>
+                <h3>STEP 3:</h3>
+                <p>Application Performance Monitoring: I carried out Application Monitoring using Atatus to track the application's behaviour in production mode to enable me pinpoint and actively resolve any issues as soon as they arise and to ensure that everything works as expected</p>
+                <img class="meet" src="img/atatus1.jpg" alt="application Performance Monitoring">
+                <img class="meet" src="img/atatus2.jpg" alt="application Performance Monitoring">
+            </div>
+
+            <div>
+                <h3>STEP 4:</h3>
+                <p>I made the app a Progressive web Application such that it can be installed on both mobile devices and computers as well as work both offline and online</p>
+                <img class="meet" src="img/PWA.jpg" alt="PWA image">
+            </div>
+
+            <div>
+                <h3>STEP 5:</h3>
+                <P>I implemented Data visualization using Recharts library to draw a scatter chart that shows the number of events in each city around the world in the application and pie chart comparing the number of event genres. I also made each section of the piechart a different color. </P>
+                <img class="meet" src="img/rechart.jpg" alt="rechart image">
+            </div>
+        </div>
+
+        <div>
+            <h2>Challenges</h2>
+            <p>This was a very interesting project as I got to create  an application that I could download both on my mobile and on desktop as well as use the application both offline and online. However, I encountered a major Cross-Origin Resource Sharing(CORS) issue which made me re-do the project twice. As a result of the issue, I was able to learn in depth about CORS policy and research for an answer.</p>
+        </div>
+
+        <div>
+            <h2>Duration</h2>
+            <p>I spent about 3 weeks on the entire project</p>
+
+            <h2>Credits</h2>
+            <p>Tutor: Andrew Gad</p>
+            <p>Mentor: Renish Bhaskaran </p>
+        </div>
+
+        <div>
+            <a target="_blank" href="index.html">Go to Home page</a>
+        </div>
+    </div>
+    
+</body>
+</html>
