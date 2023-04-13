@@ -205,6 +205,14 @@ textarea {
   padding-left: 10px;
 } */
 
+/* to center the image */
+.meet {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 @supports (display : grid) { /* this is done for newer browser models as they would read this and ignore the previous grid__item code */
   .grid {
     display: -ms-grid;
