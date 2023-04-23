@@ -11,65 +11,94 @@
     <title>Meet App Case study</title>
 </head>
 <body>
-    <div class=".page-content">
+    <header class="page-header">
+        <img src="img/MC.png" alt="logo" class="page-header__item">
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list"> <!-- role is an aria attribute -->
+            <li role="presentation"> <!-- when the role is set to presentation the screen reader will not read this as this is not an important information for the user -->
+              <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a> <!-- menuitem indicates that this link is an item of the main menubar -->
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+            </li>
+            <li role="presentation">
+              <a href="project.html" role="menuitem" class="navigation-list__item">Project</a>
+            </li>
+            <li role="presentation">
+              <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+            </li>
+            
+          </ul>
+        </nav>
+      </header>
+    
+    <div class=".page-content profile">
         <div>
-            <h1>Case Study For Meet App</h1>
+            <h1>Case Study For Meet App Project</h1>
         </div>
 
         <div>
             <h2>Overview</h2>
-           <p> Meet App is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD) technique. The Meet application uses Google Calendar API to fetch upcoming events.</p>
+           <p> Meet App is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD) technique. The Meet application uses Google Calendar API to fetch upcoming events. Users of this App will be able to use the application whenever they want to view upcoming events for a specific city and save this event on their Google Calendar</p>
         </div>
 
         <div>
             <h2>Purpose & Context</h2>
-            <p>Meet App was a personal project I built as part of my web development course at CareerFoundry to demonstrate my skills in building a progressive web application</p>
+            <p>Meet App was a personal project I built as part of my web development course at CareerFoundry to demonstrate my skills in building a progressive web application with the ability to work Offline and Online and a serverless backend developed using Test-Driven Development Technique.</p>
         </div>
 
         <div>
             <h2>Objective</h2>
-            <p>The aim of the project was to have a Web application that is not only a normal web application but also has the benefits of both serverless architecture and Progressive Web Application (PWA). The problem that I wanted to solve in this project is to build a Serverless project that does not require backend maintainance, is easy to scale and available both offline and online</p>
-            <img class="meet" src="img/meet.jpg" alt="home page">
+            <p>The aim of the project was to have a Web application that is not only a normal web application but also has the benefits of both serverless architecture and Progressive Web Application (PWA). The problem that I wanted to solve in this project is to build an application that Registered Users can use at any time both Online and Offline to view upcoming events for a specific city of choice and also be able to add this event to their Google Calender. </p>
+
+            <p>To achieve this, I used the Test-Driven Development approach, where I wrote tests code before writing the actual functionality code for my application to enable me have quality codes and an adequate test coverage.</p>
+            <img class="meet" src="img/list.jpg" alt="home page">
         </div>
 
         <div>
             <h2>Approach</h2>
-            
-            <div>
-                <h3>STEP 1:</h3>
-
-                <p>I built the application using Test-driven development (TDD) which is a software development process that focuses on unit testing to ensure he integrity and success of the applcation or software and Behavior Driven Development's (BDD) Gherkin Syntax</p>
-                <img class="meet" src="img/tddSteps.jpg" alt="Test-driven development image">
-            </div>
 
             <div>
-                <h3>STEP 2:</h3>
-                <P>I wrote Lambda functions to implement severless technology in the application, I ensured the lambda functions were adequately tested and I created a serverless deployment package using AWS Lambda. I linked the application to Google Calendar to enable it fetch data concerning events. </P>
-            </div>
+                <h3>Serverless function</h3>
+                <P>I wanted my application to be always available to Registered Users, such that they can access the application both Online and Offline with no cost for idle time. To do so, I created an application with no back-end maintainance by hosting the application via a cloud provider (AWS Lambda). I ensured the lambda functions were adequately tested and I linked the application to Google Calendar to enable it fetch data concerning events in different cities and enable Users add selected events to the Google Calendar.</P>
 
-            <div>
-                <h3>STEP 3:</h3>
-                <p>Application Performance Monitoring: I carried out Application Monitoring using Atatus to track the application's behaviour in production mode to enable me pinpoint and actively resolve any issues as soon as they arise and to ensure that everything works as expected</p>
-                <img class="meet" src="img/atatus1.jpg" alt="application Performance Monitoring">
+                <p>
+                    Next, I wanted to monitor my Application's Performance and behaviour in production mode to enable me pinpoint and actively resolve any issues as soon as they arise. To achieve this, I carried out Application Monitoring using a Full-stack Observability tool called Atatus to help me optimize the application at the right time and to ensure everything works as expected.
+                </p>
+
                 <img class="meet" src="img/atatus2.jpg" alt="application Performance Monitoring">
             </div>
 
             <div>
-                <h3>STEP 4:</h3>
-                <p>I made the app a Progressive web Application such that it can be installed on both mobile devices and computers as well as work both offline and online</p>
+                <h3>Progressive Web Application</h3>
+                <p>
+                   I wanted my application to be used on both mobile devices and desktops as well as have a great User experience such as Instant loading, "add to home screen" prompt and cross-platform compatibility. To do so, I made the app a Progressive web Application by hosting it online to make sure it is sharable and installable on any device and responsive so it displays well on any device.
+                </p>
                 <img class="meet" src="img/PWA.jpg" alt="PWA image">
+
+                
             </div>
 
             <div>
-                <h3>STEP 5:</h3>
-                <P>I implemented Data visualization using Recharts library to draw a scatter chart that shows the number of events in each city around the world in the application and pie chart comparing the number of event genres. I also made each section of the piechart a different color. </P>
+                <h3>Data Visualization</h3>
+                <P>
+                    Next, I wanted Users to easily spot the difference between events, See how many events will take place in a city on upcoming days and visualize the popularity of the event genres. To do so, I created two visually appealing charts using Recharts Library to enable users gain information at a single glance.  
+                  
+                </P> 
+                
+                <p>
+                    A Scatter chart that shows how many events will take place in a specific city in upcoming days and a Pie chart that shows the popularity of each event, with each event represented with a different colour.
+                </P>
                 <img class="meet" src="img/rechart.jpg" alt="rechart image">
             </div>
+
         </div>
 
         <div>
             <h2>Challenges</h2>
-            <p>This was a very interesting project as I got to create  an application that I could download both on my mobile and on desktop as well as use the application both offline and online. However, I encountered a major Cross-Origin Resource Sharing(CORS) issue which made me re-do the project twice. As a result of the issue, I was able to learn in depth about CORS policy and research for an answer.</p>
+            <p>This was a very interesting project as I got to create  an application that I could download both on my mobile and on desktop as well as use the application both offline and online. </p>
+
+            <p>However, because this was my first time using AWS services, the project turned out to be difficult. I also encountered a major Cross-Origin Resource Sharing(CORS) issue which made me re-do the project twice. But with the help of my Tutor and after series of pair-programming sessions with my fellow colleagues, I was able to learn in depth about CORS policy and develop a Serverless Progressive Web Application.</p>
         </div>
 
         <div>
@@ -81,9 +110,6 @@
             <p>Mentor: Renish Bhaskaran </p>
         </div>
 
-        <div>
-            <a target="_blank" href="index.html">Go to Home page</a>
-        </div>
     </div>
     
 </body>
