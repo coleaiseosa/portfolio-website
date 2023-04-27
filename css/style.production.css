@@ -209,6 +209,15 @@ textarea {
   height: auto;
 }
 
+.impressum {
+  margin-top: 100px;
+}
+
+.cv {
+  text-decoration: none;
+  color: #fff;
+}
+
 @supports (display : grid) { /* this is done for newer browser models as they would read this and ignore the previous grid__item code */
   .grid {
     display: -ms-grid;
